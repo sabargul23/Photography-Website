@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>Shirzad Photography | Gallery</title>
+<!---Bootstrap Css---> 
+    <link
+        rel="stylesheet" href="bootstrap-5.3.8-dist/css/bootstrap.min.css">
+<!---- Bootstrap Icons----->
+ <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+<!---link Css---->
+<link rel="stylesheet" href="Css/style.css"> 
+</head>
+<body>
+    <!----Navbar--->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container">
+            <!---Logo--->
+            <a class="navbar-brand fw-bold" href="#">
+                <i class="bi bi-camera"></i>
+                Shirzad Photography
+            </a>
+            <!----Mobile Button---->
+            <button class="navbar-toggler"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav"
+                    aria-controls="navbarNav"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                    >
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!----Meun---->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Gallery</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">AI Studio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="btn btn-light rounded-pill px-4">Login</a>
+                        </li>
+                    </ul>
+                </div>   
+        </div>
+    </nav>
+    <!-----Gallery Header----->
+    <section class="gallery-header">
+        <div class="container text-center">
+        <p class="gallery-subtitle">
+            SHIRZAD PHOTOGRAPGHY GALLERY
+        </p>
+        <h1>Explore Our <span>Photography</span>
+        </h1>
+        <p>
+            Discover beautiful free and premium photographs from talented creators.
+        </p>
+        </div>
+    </section>
+    <!------Filter----->
+    <section class="gallery-content">
+        <div class="container">
+         <!---Search---->
+         <div class="row justify-content-center mb-5">
+            <div class="col-lg-6">
+                <div class="search-box">
+                    <i class="bi bi-search"></i>
+                    <input
+                    type="text"
+                    id="searchInput"
+                    placeholder="Search photos..."
+                    >
+                </div>
+            </div>
+         </div>
+         <!-----Filter Buttons----->
+         <div class="filter-buttons text-conter mb-5">
+            <button class="filter-btn active" data-filter="all">
+                All
+            </button>
+            <button class="filter-btn">
+             Free 
+            </button>
+             <button class="filter-btn">
+             Premium
+            </button>
+             <button class="filter-btn">
+             Nature
+            </button>
+             <button class="filter-btn">
+             Portrait
+            </button>
+             <button class="filter-btn">
+             Travel
+            </button>
+         </div>
+         <!----Photos---->
+         <div class="row g-4" id="galleryContainer">
+            <!-----Photo 1---->
+            <div class="col-md-6 col-lg-4 photo-item" data-category="free nature">
+                <div class="photo-card">
+                    <div class="photo-image">
+                        <img src="Image/nature4.jpg" alt="Nature" class="gallery-img">
+                        <span class="photo-badge free-badge">
+                            FREE
+                        </span>
+                    </div>
+                    <div class="photo-info">
+                        <h5> Beautiful Nature </h5>
+                        <p> Nature Photography </p>
+                        <button class="view-btn"> View Photo</button>
+                    </div>
+                </div>
+            </div>
+             <!-----Photo 2---->
+            <div class="col-md-6 col-lg-4 photo-item" data-category="free travel">
+                <div class="photo-card">
+                    <div class="photo-image">
+                        <img src="Image/city1.jpg" alt="Travel" class="gallery-img">
+                        <span class="photo-badge free-badge">
+                            FREE
+                        </span>
+                    </div>
+                    <div class="photo-info">
+                        <h5> City Adventure </h5>
+                        <p> Travel Photography </p>
+                        <button class="view-btn"> View Photo</button>
+                    </div>
+                </div>
+            </div>
+             <!-----Photo 3---->
+            <div class="col-md-6 col-lg-4 photo-item" data-category="premiu, portrait">
+                    <div class="photo-card premium-card">
+                        <div class="photo-image">
+                        <img src="Image/portrait2.jpg" alt="Portrait" class="gallery-img">
+                        <span class="photo-badge free-badge">
+                            PREMIUM
+                        </span>
+                    </div>
+                    <div class="photo-info">
+                        <h5> Professional Portrait </h5>
+                        <p> 
+                            Portrait Photography 
+                        </p>
+                        <div class="price">
+                            $5.00
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-----Photo 4---->
+                <div class="col-md-6 col-lg-4 photo-item" data-category="premiu, travel">
+                    <div class="photo-card premium-card">
+                        <div class="photo-image">
+                        <img src="Image/travel.jpg" alt="Travel" class="gallery-img">
+                        <span class="photo-badge free-badge">
+                            PREMIUM
+                        </span>
+                    </div>
+                    <div class="photo-info">
+                        <h5> Luxury Travel</h5>
+                        <p> 
+                            Travel Photograpgy
+                        </p>
+                        <div class="price">
+                            $10.00
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                 <!-----Photo 5---->
+                <div class="col-md-6 col-lg-4 photo-item" data-category="Free nature">
+                    <div class="photo-card">
+                        <div class="photo-image">
+                        <img src="Image/nature5.jpg" alt="nature" class="gallery-img">
+                        <span class="photo-badge free-badge">
+                            FREE
+                        </span>
+                    </div>
+                    <div class="photo-info">
+                        <h5> Mountain Landscape </h5>
+                        <p> 
+                            Nature Photograpgy
+                        </p>
+                        <button class="view-btn">
+                               View Photo
+                        </button>
+                    
+                    </div>
+                    </div>
+                </div>
+                 <!-----Photo 4---->
+                <div class="col-md-6 col-lg-4 photo-item" data-category="premiu, travel">
+                    <div class="photo-card premium-card">
+                        <div class="photo-image">
+                        <img src="Image/wedding1.jpg" alt="Wedding" class="gallery-img">
+                        <span class="photo-badge free-badge">
+                            PREMIUM
+                        </span>
+                    </div>
+                    <div class="photo-info">
+                        <h5>Wedding Photograpgy </h5>
+                        <p> 
+                            Professional Photograpgy
+                        </p>
+                        <div class="price">
+                            $15.00
+                        </div>
+                    </div>
+                    </div>
+                </div>    
+          </div>                  
+        </div>
+    </section>
+    <!----lightvox---->
+    <div class="lightbox" id="lightbox">
+        <button class="lightbox-close" id="lightboxClose">
+            <i class="bi bi-x-lg"></i>
+        </button>
+        <button class="lightbox-prev" id="lightboxPrev">
+            <i class="bi bi-chevron-left"></i>   
+        </button>
+        <div class="lightbox-content">
+            <img id="lightboxImage" src="" alt="">
+            <div class="lightbox-caption">
+                <h4 id="lightboxTitle"></h4>
+                <p id="lightboxDesciption"></p>
+            </div>
+        </div>
+        <button class="lightbox-next" id="lightboxNext">
+            <i class="bi bi-chevron-right"></i>
+        </button>
+    </div>
+
+    <!---Footer--->
+    <footer>
+        <div class="container text-center">
+            <h4>
+                <i class="bi bi-camera"></i>
+                Shirzad Photography
+            </h4>
+            <p>Photography meets artificial intelligence.</p>
+            <div class="social-icons">
+                <a href="#">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="bi bi-github"></i>
+                </a>
+            </div>
+            <hr>
+            <small>
+                @ 2026 Shirzad Photography. All rights reserved.
+            </small>
+        </div>
+    </footer>
+        <!---Bootstrap JavaScript--->
+    <script src="bootstrap-5.3.8-dist/js/bootstrap.bundle.min.js"></script>
+    <!---link JavaScript--->
+    <script src="Js/script.js"></script>
+</body>
+</html>
